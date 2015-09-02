@@ -1,0 +1,16 @@
+{
+    "contents" : "# ·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.\n\n#   MIGUEL REVUELTA ESPINOSA\n#   PRÁCTICA FINAL DATA MINING\n#   FICHERO DE CONFIGURACIÓN DE SERVIDOR\n#   APLICACIÓN: GALAXIAS\n\n# ·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.\n\n\nlibrary(shiny)\nlibrary(ggplot2)\nlibrary(\"MASS\")\n\nshinyServer(function(input, output) {\n\n  output$distPlot <- renderPlot({\n    \n    # pintar el histograma\n    hist(galaxies, breaks = input$bins, col = c(heat.colors(10, alpha = 1)), \n         border = 'white', main = \"Galaxias\", \n         xlab = \"Velocidad Km/s\", ylab=\"Frecuencia\", right=\"TRUE\")\n  })\n})\n\n",
+    "created" : 1423141757893.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3261703509",
+    "id" : "DAABE8",
+    "lastKnownWriteTime" : 1423098718,
+    "path" : "F:/Data Mining/PrácticaFinal/Aplicaciones/Galaxias/Galaxias/server.R",
+    "project_path" : "server.R",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

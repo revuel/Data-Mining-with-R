@@ -1,0 +1,17 @@
+{
+    "contents" : "# ·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.\n\n#   MIGUEL REVUELTA ESPINOSA\n#   PRÁCTICA FINAL DATA MINING\n#   FICHERO DE CONFIGURACIÓN DE CLIENTE\n#   APLICACIÓN: GALAXIAS\n\n# ·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.\n\nlibrary(shiny)\nlibrary(ggplot2)\nlibrary(\"MASS\")\n\n\n# Aplicación que grafica un histograma\nshinyUI(fluidPage(\n  \n  # Título\n  titlePanel(\"Velocidades de galaxias\"),\n  \n  # Slider\n  sidebarLayout(\n    sidebarPanel(\n      sliderInput(\"bins\",\n                  \"Conjuntos ~:\",\n                  min = 2,\n                  max = 18,\n                  value = 9)\n    ),\n    \n    # Mostrar\n    mainPanel(\n      plotOutput(\"distPlot\")\n    )\n  )\n))\n\n",
+    "created" : 1423059600569.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1150889935",
+    "id" : "4DBD1537",
+    "lastKnownWriteTime" : 1423098810,
+    "path" : "J:/Data Mining/PrácticaFinal/Aplicaciones/Galaxias/Galaxias/ui.R",
+    "project_path" : "ui.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

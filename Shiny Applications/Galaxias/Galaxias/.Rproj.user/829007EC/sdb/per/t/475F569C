@@ -1,0 +1,17 @@
+{
+    "contents" : "# ·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.\n\n#   MIGUEL REVUELTA ESPINOSA\n#   PRÁCTICA FINAL DATA MINING\n#   FICHERO DE CONFIGURACIÓN DE RSTUDIO LOCAL\n\n# ·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.\n\n# 1) Dependencia de instalación de Shinyapp\ninstall.packages('devtools')\n\n# 2) Instalación de Shinyapp\ndevtools::install_github('rstudio/shinyapps')\n\n# 3) Activación de permiso de enlace\nshinyapps::setAccountInfo(name='eucc', \n  token='DE028F448FB17294BEF12DB32F768A02', \n  secret='isjIeYe1rQkkapBx6wLwtgnc6OdgtlbjpB7/lxqf')\n\n# 4) Uso de la libreria\nlibrary(shinyapps)\n\n# 5) Dependencias de las aplicaciones que serán implementadas\ninstall.packages(c('ggplot2', 'shiny'))\ninstall.packages(\"datasets\")\ninstall.packages(\"Ecdat\")\ninstall.packages(\"MASS\")\ninstall.packages(\"survival\")\ninstall.packages(\"HistData\")\ninstall.packages(\"rCharts\")\n\n",
+    "created" : 1423048035742.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1710028354",
+    "id" : "475F569C",
+    "lastKnownWriteTime" : 1423067680,
+    "path" : "F:/Data Mining/PrácticaFinal/config.R",
+    "project_path" : null,
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}
